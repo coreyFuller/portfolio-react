@@ -1,9 +1,9 @@
 
 import ImageGrid from './ImageGrid'
-import Comics from '../images/IMG_9058.PNG'
-import Excercise from '../images/IMG_0866.JPG'
-import Games from '../images/IMG_2243.JPG'
-import Coding from '../images/IMG_8550.JPG'
+import Comics from '../images/IMG_9058.png'
+import Excercise from '../images/IMG_0866.jpg'
+import Games from '../images/IMG_2243.jpg'
+import Coding from '../images/IMG_8550.jpg'
 
 const hobbies = [
   {

@@ -3,7 +3,7 @@ import ImageGrid from "./ImageGrid";
 import DataViz  from '../images/Screenshot 2022-02-03 205835.png'
 import SocialMedia  from '../images/Screenshot 2022-02-03 211311.png'
 import Eleos  from '../images/Screenshot 2022-02-03 205455.png'
-import CUConnect  from '../images/IMG_1190.JPG'
+import CUConnect  from '../images/IMG_1190.jpg'
 
 
 const projects = [

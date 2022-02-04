@@ -1,18 +1,8 @@
 import * as React from "react";
-import { useState } from "react";
 import {
-  Button,
-  Stack,
-  Grid,
-  Divider,
-  Box,
-  IconButton,
-  Link,
-  Accordion
+  Button
 } from "@mui/material";
 import Skills from "./components/Skills";
-import About from "./components/About";
-import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import Hobbies from './components/Hobbies'
 import ArticleIcon from '@mui/icons-material/Article';
@@ -23,17 +13,8 @@ import Resume from './docs/Current Resume, Corey Fuller.pdf'
 
 
 
-// 1. import `ChakraProvider` component
 
 function App() {
-  const [currentView, setCurrentView] = useState("default");
-  const views = {
-    skills: <Skills />,
-    projects: <Projects />,
-    contact: <Contact />,
-    about: <About />,
-    default: <div></div>,
-  };
   const today = new Date();
   const hour = today.getHours();
   const time_period =
@@ -42,7 +23,6 @@ function App() {
       : hour >= 13 && hour < 18
       ? "afternoon"
       : "evening";
-  // 2. Use at the root of your app
   return (
     <div>
       <body>
@@ -66,11 +46,13 @@ function App() {
         <Projects/>
         <h2>Hobbies</h2>
         <Hobbies/>
+        <a href = {Resume} target = "_blank">Download Pdf</a>
          <Button
           variant="link"
           startIcon={<ArticleIcon/>}
           href={Resume}
           target="_blank"
+          rel="noreferrer"
         >Resume</Button>
         <Button
           variant="link"
