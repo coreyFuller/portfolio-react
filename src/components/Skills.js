@@ -9,7 +9,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 export default function SimpleAccordion() {
   return (
     <Box sx={{
-      width: "50vw"
+      width: "65vw"
     }}>
       <Accordion>
         <AccordionSummary

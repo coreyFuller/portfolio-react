@@ -19,6 +19,7 @@ import ArticleIcon from '@mui/icons-material/Article';
 import  GitHubIcon  from "@mui/icons-material/GitHub";
 import  LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from '@mui/icons-material/Instagram'
+import Resume from './docs/Current Resume, Corey Fuller.pdf'
 
 
 
@@ -68,7 +69,7 @@ function App() {
          <Button
           variant="link"
           startIcon={<ArticleIcon/>}
-          href="Current Resume, Corey Fuller.pdf"
+          href={Resume}
           target="_blank"
         >Resume</Button>
         <Button

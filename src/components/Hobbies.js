@@ -1,26 +1,30 @@
 
 import ImageGrid from './ImageGrid'
+import Comics from '../images/IMG_9058.PNG'
+import Excercise from '../images/IMG_0866.JPG'
+import Games from '../images/IMG_2243.JPG'
+import Coding from '../images/IMG_8550.JPG'
 
 const hobbies = [
   {
     name : "Comics",
     content: "I love reading and collecting comics. I am a huge DC fan, especially batman.",
-    path : '%PUBLIC_URL%/IMG_9058.PNG'
+    path : Comics
   },
   {
     name : "Exercise",
     content: "I like to weightlift and do cardio. My favorite sport to play is dodgeball.",
-    path : '%PUBLIC_URL%/IMG_0866.JPG'
+    path : Excercise
   },
   {
     name : "Games",
     content: "I have been playing video games ever since I was 4 years old. I own several retro consoles.",
-    path : "%PUBLIC_URL%/IMG_2243.JPG"
+    path : Games
   }, 
   {
     name : "Coding",
     content : "In my free time I love learning new technologies and programming languages.",
-    path : "%PUBLIC_URL%/IMG_8550.JPG"
+    path : Coding
   }
 ]
 
