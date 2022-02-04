@@ -1,6 +1,5 @@
 import * as React from "react";
 import { useState } from "react";
-import Hobbies from './components/Hobbies'
 import {
   Button,
   Stack,
@@ -15,6 +14,7 @@ import Skills from "./components/Skills";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
+import Hobbies from './components/Hobbies'
 import ArticleIcon from '@mui/icons-material/Article';
 import  GitHubIcon  from "@mui/icons-material/GitHub";
 import  LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -60,14 +60,10 @@ function App() {
         </p>
         <h3>Skills</h3>
         <Skills/>
-        <h3>Projects</h3>
-        <ul>
-          <li>Video Game Data Visualization</li>
-          <li>Social Media Data Parser</li>
-          <li>Eleos Tech App Integration Service</li>
-          <li>CU-Connect</li>
-        </ul>
-        <h3>Hobbies</h3>
+        <h2>Projects</h2>
+        <h4>Click the card to open the source code!</h4>
+        <Projects/>
+        <h2>Hobbies</h2>
         <Hobbies/>
          <Button
           variant="link"

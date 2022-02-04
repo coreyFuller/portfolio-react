@@ -3,30 +3,32 @@ import {
   CardMedia,
   CardContent,
   Typography,
-  Stack
+  Stack,
+  CardActionArea,
 } from "@mui/material";
 
 const ImageGrid = (props) => {
   return (
-<Stack
-  direction={{ xs: 'column', sm: 'row' }}
-  spacing={{ xs: 1, sm: 2, md: 4 }}
->
-      {props.hobbies.map((hobby) => {
+    <Stack
+      direction={{ xs: "column", sm: "row" }}
+      spacing={{ xs: 1, sm: 2, md: 4 }}
+    >
+      {props.data.map((d) => {
         return (
-          <Card sx={{ maxWidth: 345,
-            border: 1,
-            borderRadius: 16,
-            boderColor: "black" }}>
-            <CardMedia
-              component="img"
-              image={hobby.path}
-              height="100"
-              width="100"
-            ></CardMedia>
-            <CardContent>
-              <Typography>{hobby.content}</Typography>
-            </CardContent>
+          <Card sx={{ maxWidth: 345 }}>
+            <CardActionArea href={d.source !== undefined || d.source !== null ? d.source : null}
+            target="_blank"
+            >
+              <CardMedia component="img" height="140" image={d.path} />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  {d.name}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  {d.content}
+                </Typography>
+              </CardContent>
+            </CardActionArea>
           </Card>
         );
       })}

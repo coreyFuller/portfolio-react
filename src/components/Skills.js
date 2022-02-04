@@ -24,17 +24,17 @@ export default function SimpleAccordion() {
             <List>
               <ListItem>
                 <ListItemText>
-                  Coding: C# Javascript Java, Python C C++
+                  Coding => C# ◾ Javascript ◾ Java ◾  Python ◾ C ◾ C++
                 </ListItemText>
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  Scripting: Bash and PowerShell
+                  Scripting => Bash ◾ PowerShell
                 </ListItemText>
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  Database Management: MySQL SQL Server Postgres DynamoDB
+                  Database Management => MySQL ◾  SQL Server ◾ Postgres ◾  DynamoDB
                 </ListItemText>
               </ListItem>
             </List>
@@ -54,17 +54,17 @@ export default function SimpleAccordion() {
           <List>
               <ListItem>
                 <ListItemText>
-                  Frontend => React Angular D3.js MUI
+                  Frontend => React ◾ Angular ◾ D3.js ◾ MUI
                 </ListItemText>
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  Backend => .Net (ASP, Core, Framework)  Express
+                  Backend => .Net (ASP, Core, Framework) ◾  Express
                 </ListItemText>
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  Testing => Pester JUnit NUnit
+                  Testing => Pester ◾ JUnit◾  NUnit
                 </ListItemText>
               </ListItem>
               </List>
@@ -84,7 +84,7 @@ export default function SimpleAccordion() {
           <List>
               <ListItem>
                 <ListItemText>
-                Git Amazon Web Services Docker Visual Studio Microsoft Office Suite
+                Git ◾  AWS ◾  Docker ◾  Visual Studio ◾ Microsoft Office Suite
                 </ListItemText>
               </ListItem>
               </List>
