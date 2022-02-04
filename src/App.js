@@ -1,18 +1,11 @@
 import * as React from "react";
-import {
-  Button
-} from "@mui/material";
+import { Button } from "@mui/material";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
-import Hobbies from './components/Hobbies'
-import ArticleIcon from '@mui/icons-material/Article';
-import  GitHubIcon  from "@mui/icons-material/GitHub";
-import  LinkedInIcon from "@mui/icons-material/LinkedIn";
-import InstagramIcon from '@mui/icons-material/Instagram'
-import Resume from './docs/Current Resume, Corey Fuller.pdf'
-
-
-
+import Hobbies from "./components/Hobbies";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 function App() {
   const today = new Date();
@@ -24,7 +17,10 @@ function App() {
       ? "afternoon"
       : "evening";
   return (
-    <div>
+    <div style={{
+      padding : 4,
+      margin : 4
+    }}>
       <body>
         <img src="me-rounded.png" alt="me" />
         <h1>Good {time_period}! I'm Corey Fuller.</h1>
@@ -40,35 +36,36 @@ function App() {
           to complex problems.
         </p>
         <h3>Skills</h3>
-        <Skills/>
+        <Skills />
         <h2>Projects</h2>
         <h4>Click the card to open the source code!</h4>
-        <Projects/>
+        <Projects />
         <h2>Hobbies</h2>
-        <Hobbies/>
-        <a href = {Resume} target = "_blank">Download Pdf</a>
-         <Button
-          variant="link"
-          startIcon={<ArticleIcon/>}
-          href={Resume}
-          target="_blank"
-          rel="noreferrer"
-        >Resume</Button>
+        <Hobbies />
         <Button
           variant="link"
-          startIcon={<GitHubIcon/>}
-          href="https://github.com/coreyFuller" target="_blank"
-        >Github</Button>
+          startIcon={<GitHubIcon />}
+          href="https://github.com/coreyFuller"
+          target="_blank"
+        >
+          Github
+        </Button>
         <Button
           variant="link"
           startIcon={<LinkedInIcon />}
-          href="https://www.linkedin.com/in/corey-fuller-/" target="_blank"
-        >Linkedin</Button>
-        <Button variant="link"
+          href="https://www.linkedin.com/in/corey-fuller-/"
+          target="_blank"
+        >
+          Linkedin
+        </Button>
+        <Button
+          variant="link"
           startIcon={<InstagramIcon />}
           href="https://www.instagram.com/cjfuller_official/"
-          target='_blank'
-        >Instagram</Button>
+          target="_blank"
+        >
+          Instagram
+        </Button>
       </body>
       <footer>© Corey Fuller, 2022</footer>
     </div>
