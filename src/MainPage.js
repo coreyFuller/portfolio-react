@@ -31,7 +31,7 @@ const MainPage = (props) => {
       ? "afternoon"
       : "evening";
 
-  const [view, setView] = useState("hobbies");
+  const [view, setView] = useState("projects");
   const views = {
     hobbies: <Hobbies />,
     skills: <Skills />,
@@ -82,6 +82,7 @@ const MainPage = (props) => {
         to complex problems.
       </Typography>
       <br />
+      <Stack direction='column' alignItems='center' justifyContent='center' spacing={1}>
       <Typography
         sx={{ padding: 1, marginBottom: 4 }}
         variant="body1"
@@ -89,9 +90,10 @@ const MainPage = (props) => {
         noWrap={true}
       >
         Check out below to get to know me some more!
-        <ArrowDownwardIcon />
       </Typography>
-      <Tabs centered onChange={changeView} value={view}>
+      <ArrowDownwardIcon />
+      </Stack>
+      <Tabs centered onChange={changeView} value={view} sx={{margin : 1}}>
         <Tab label="hobbies" value="hobbies" />
         <Tab label="projects" value="projects" />
         <Tab label="skills" value="skills" />
