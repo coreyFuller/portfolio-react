@@ -10,15 +10,14 @@ const projects = [
   {
     name : "Video Game Data Visualization",
     content: `React application that uses D3.js to visualize and examine the different factors that affect the sales of video games across
-    multiple regions and generations. Styled with Material UI and deployed through AWS using AWS Amplify and S3.
-    `,
+    multiple regions and generations. Styled with Material UI and deployed through AWS.`,
     path : DataViz,
     source : "https://github.com/coreyFuller"
   },
   {
     name : "Social Media Data Parser",
     content: `Python application that analyzes personal social media metadata requested from Snapchat, Instagram, and
-    TikTok and reports information not immediately available through the platform apps, released as open source packages.`,
+    TikTok and reports information not immediately available through the platform apps`,
     path : SocialMedia,
     source : "https://github.com/coreyFuller"
   },

@@ -4,12 +4,12 @@ import Comics from '../images/IMG_9058.png'
 import Excercise from '../images/IMG_0866.jpg'
 import Games from '../images/IMG_2243.jpg'
 import Coding from '../images/IMG_8550.jpg'
-
+import {Stack, Typography, Card, CardContent, CardMedia} from '@mui/material'
 const hobbies = [
   {
     name : "Comics",
     content: "I love reading and collecting comics. I am a huge DC fan, especially batman.",
-    path : Comics
+    path : Games
   },
   {
     name : "Exercise",
@@ -19,7 +19,7 @@ const hobbies = [
   {
     name : "Games",
     content: "I have been playing video games ever since I was 4 years old. I own several retro consoles.",
-    path : Games
+    path : Comics
   }, 
   {
     name : "Coding",
@@ -29,7 +29,25 @@ const hobbies = [
 ]
 
 const Hobbies = () => {
-  return <ImageGrid data={hobbies}/>
+  return (
+    <Stack
+    direction={{ xs: "column", sm: "row" }}
+    spacing={{ xs: 1, sm: 2, md: 4 }}
+  >
+    {hobbies.map((h) => {
+      return (
+        <Card sx={{ width : 345, maxHeight : 330 }}>
+            <CardMedia component="img" height="200" image={h.path} />
+            <CardContent>
+              <Typography gutterBottom variant="h6" align="center">
+                {h.name}
+              </Typography>
+            </CardContent>
+        </Card>
+      );
+    })}
+  </Stack>
+  )
 }
 
 export default Hobbies

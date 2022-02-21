@@ -19,12 +19,12 @@ const ImageGrid = (props) => {
             <CardActionArea href={d.source !== undefined || d.source !== null ? d.source : null}
             target="_blank"
             >
-              <CardMedia component="img" height="140" image={d.path} />
+              <CardMedia component="img" height="200" image={d.path} />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography gutterBottom variant="h6" align="center">
                   {d.name}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="subtitle2" align='center' color="text.primary">
                   {d.content}
                 </Typography>
               </CardContent>
