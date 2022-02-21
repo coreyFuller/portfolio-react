@@ -16,33 +16,40 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 export default function SimpleAccordion() {
   return (
-    <Stack direction="row" spacing={2}>
-      <Card variant="outlined">
+    <Stack
+      direction={{ xs: "column", sm: "row" }}
+      spacing={{ xs: 1, sm: 2, md: 4 }}
+    >
+      <Card variant="outlined" sx={{ Width: 373 }}>
         <CardContent>
-          <Typography variant="h5" align="center">Programming</Typography>
+          <Typography variant="h5" align="center">
+            Programming
+          </Typography>
           <Typography align="center" variant="subtitle2">
-          <List>
-            <ListItem>
-              <ListItemText>
-                Coding: C#, Javascript, Java, Python, C, C++
-              </ListItemText>
-            </ListItem>
-            <ListItem>
-              <ListItemText>Scripting: Bash, PowerShell</ListItemText>
-            </ListItem>
-            <ListItem>
-              <ListItemText>
-                Database Management: MySQL, SQL Server, Postgres, DynamoDB
-              </ListItemText>
-            </ListItem>
-          </List>
+            <List>
+              <ListItem>
+                <ListItemText>
+                  Coding: C#, Javascript, Java, Python, C, C++
+                </ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText>Scripting: Bash, PowerShell           </ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText>
+                  Database Management: MySQL, SQL Server, Postgres, DynamoDB
+                </ListItemText>
+              </ListItem>
+            </List>
           </Typography>
         </CardContent>
       </Card>
       <Card variant="outlined">
         <CardContent>
-        <Typography variant="h5" align="center">Frameworks and Libraries</Typography>
-        <Typography align="center" variant="subtitle2">
+          <Typography variant="h5" align="center">
+            Frameworks and Libraries
+          </Typography>
+          <Typography align="center" variant="subtitle2">
             <List>
               <ListItem>
                 <ListItemText>
@@ -51,7 +58,7 @@ export default function SimpleAccordion() {
               </ListItem>
               <ListItem>
                 <ListItemText>
-                  Backend: .Net (ASP, Core, Framework), Express
+                  Backend: Express, .Net (ASP, Core, Framework)
                 </ListItemText>
               </ListItem>
               <ListItem>
@@ -63,27 +70,27 @@ export default function SimpleAccordion() {
       </Card>
       <Card variant="outlined">
         <CardContent>
-        <Typography variant="h5" align="center">Technologies and Tools</Typography>
-        <Typography align="center" variant="subtitle2">
-          <List>
-            <ListItem>
-              <ListItemText>
-                Cloud: AWS, Heroku, Google Cloud Platform
-              </ListItemText>
-            </ListItem>
-            <ListItem>
-              <ListItemText>
-                CI/CD: Git, CircleCI, Azure Devops, Docker Visual Studio,
-                Microsoft Office Suite
-              </ListItemText>
-            </ListItem>
-            <ListItem>
-              <ListItemText>
-                Development and Other Tools: Visual Studio, Postman, Linux,
-                Windows, Microsoft Office Suite
-              </ListItemText>
-            </ListItem>
-          </List>
+          <Typography variant="h5" align="center">
+            Technologies and Tools
+          </Typography>
+          <Typography align="center" alignItems='center' justifyContent='center' variant="subtitle2">
+            <List>
+              <ListItem>
+                <ListItemText>
+                  Cloud: AWS, Heroku, Google Cloud Platform
+                </ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText>
+                  CI/CD: Git, CircleCI, Azure Devops, Docker
+                </ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText>
+                  Development: Visual Studio, Postman, REST, Linux, Windows
+                </ListItemText>
+              </ListItem>
+            </List>
           </Typography>
         </CardContent>
       </Card>

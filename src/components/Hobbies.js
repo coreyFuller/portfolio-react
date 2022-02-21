@@ -8,7 +8,7 @@ import {Stack, Typography, Card, CardContent, CardMedia} from '@mui/material'
 const hobbies = [
   {
     name : "Comics",
-    content: "I love reading and collecting comics. I am a huge DC fan, especially batman.",
+    content: "I love reading and collecting comics. I am a huge DC fan, especially Batman.",
     path : Games
   },
   {
@@ -41,6 +41,9 @@ const Hobbies = () => {
             <CardContent>
               <Typography gutterBottom variant="h6" align="center">
                 {h.name}
+              </Typography>
+              <Typography variant='subtitle2' align='center'>
+                {h.content}
               </Typography>
             </CardContent>
         </Card>
