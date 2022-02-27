@@ -26,9 +26,9 @@ const MainPage = (props) => {
   const today = new Date();
   const hour = today.getHours();
   const time_period =
-    hour >= 0 && hour < 12
+    hour >= 6 && hour < 12
       ? "morning"
-      : hour >= 13 && hour < 18
+      : hour > 12 && hour < 19
       ? "afternoon"
       : "evening";
 
