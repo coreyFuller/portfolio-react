@@ -64,9 +64,9 @@ const MainPage = (props) => {
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia component="img" image={Me} height="280" alt="me" />
         </Card>
-      <Stack direction="row" sx={{ margin: 2 }}>
+      <Stack direction="row" spacing={1} sx={{ margin: 2 }}>
         <Button
-          variant="link"
+          variant="outlined"
           startIcon={<GitHubIcon />}
           href="https://github.com/coreyFuller"
           target="_blank"
@@ -74,7 +74,7 @@ const MainPage = (props) => {
           Github
         </Button>
         <Button
-          variant="link"
+          variant="outlined"
           startIcon={<LinkedInIcon />}
           href="https://www.linkedin.com/in/corey-fuller-/"
           target="_blank"
@@ -82,7 +82,7 @@ const MainPage = (props) => {
           Linkedin
         </Button>
         <Button
-          variant="link"
+          variant="outlined"
           startIcon={<InstagramIcon />}
           href="https://www.instagram.com/cjfuller_official/"
           target="_blank"
